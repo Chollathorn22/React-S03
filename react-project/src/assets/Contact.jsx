@@ -1,4 +1,4 @@
-import PropsTypes from 'react-proptypes';
+import PropsTypes from 'prop-proptypes';
 
 export default function Contact(props) {
     return(
@@ -7,7 +7,6 @@ export default function Contact(props) {
             <p>Send me a message!</p>
         </div>
     );
-    
 }
 
 Contact.prototype = {
