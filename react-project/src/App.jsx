@@ -1,6 +1,6 @@
-import Contact from './assets/Hello';
+import Contact from './assets/Contact';
 import Hello from './assets/Hello';
-
+import Counter from './assets/Counter';
 
 function App() {
   console.log('App component');

@@ -13,7 +13,6 @@ function Hello( {message, name}) {
   Hello.PropsTypes = {
     message: PropsTypes.string.isRequired,
     name: PropsTypes.string.isRequired
-
   };
 
   Hello.defaultProps = {
