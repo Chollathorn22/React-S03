@@ -1,7 +1,9 @@
-import PropsTypes from 'prop-proptypes';
+
+import PropTypes from 'prop-types';
 
 export default function Contact(props) {
-    return(
+    console.log('Contact component');
+    return (
         <div>
             <h2>{props.email} {props.phone}</h2>
             <p>Send me a message!</p>
@@ -9,7 +11,7 @@ export default function Contact(props) {
     );
 }
 
-Contact.prototype = {
-    email: PropsTypes.string.isRequired,
-    phone: PropsTypes.string.isRequired
-}
+Contact.propTypes = {
+    email: PropTypes.string.isRequired,
+    phone: PropTypes.string.isRequired
+};

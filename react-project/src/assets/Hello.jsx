@@ -1,24 +1,27 @@
 
-function Hello( {message, name}) {
-    console.log('Hello component');
-    return (
-      <div>
-        <h1>Hello {message}  {name} </h1>
-        </div>
-    );
-  };
+const Hello = ({name,message}) => {
+  console.log({name,message});
 
-  import PropsTypes from 'prop-types';
+  return (
+    <div>
+      <h1>
+          Hello {name} {message}
+      </h1> 
+      </div>
+  );
+};
 
-  Hello.PropsTypes = {
-    message: PropsTypes.string.isRequired,
-    name: PropsTypes.string.isRequired
-  };
+
+import PropTypes from 'prop-types';
+
+Hello.PropTypes = {
+  name: PropTypes.string.isRequired,
+  message: PropTypes.string
+};
 
   Hello.defaultProps = {
-    name: "Guest",
-    message: "Good morning"
-  }
+      name: "Guest",
+      message: "Good morning"
+  };
 
-  export default Hello
-  
+  export default Hello;
